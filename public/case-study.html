@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case-study</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<script src="./index.js"></script>
+</head>
+<body>
+    <section class="pb-28 bg-gray-1000" id="case-studies">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <span class="inline-h-6 mb-6 px-3 py-1.5 text-xs uppercase font-medium text-white bg-gray-800 rounded-full">Our work</span>
+                <h2 class="mb-12 mt-6 text-4xl md:text-5xl text-white font-medium tracking-tight">Case studies &amp;projects</h2>
+            </div>
+            <div class="flex flex-col grid-cols-1 md:grid md:grid-cols-2 md:grid-rows-2 mx-auto gap-10 md:h-208">
+                <a href="/case-studies/1secondcopy" class="relative rounded-3xl h-full hover:opacity-90 duration-100 col-start-1 col-end-1 row-start-1 row-end-3 h-128 md:h-auto">
+                    <img class="w-full rounded-3xl object-cover h-full" src="../images/case-1.jpg" alt=""/>
+                    <div class="absolute top-0 left-0 flex flex-col justify-between w-full h-full">
+                        <div class="p-8">
+                            <div class="flex flex-wrap justify-end -m-1.5"></div>
+                        </div>
+                        <div class="p-8 bg-gray-1000 bg-opacity-50 overflow-y-auto">
+                            <h3 class=" mb-4 text-xl text-white font-medium">Agency: from $10K to $90K/mo in 12 months</h3>
+                            <p class="text-gray-300">Using a fully automated outreach system, we helped bring over 500 new customers to a content marketing agency in less than 12 months. Outreach was customized to each prospect using AI, leading to record open rates and conversion rates.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/case-studies/yengub" class=" h-128 md:h-auto w-full hover:opacity-90 duration-100 md:col-start-2 md:col-end-2 md:row-start-1 md:row-end-2">
+                    <div class="relative overflow-hidden rounded-3xl h-full">
+                        <img class="w-full rounded-3xl h-full object-cover" src="../images/case-2.png" alt=""/>
+                        <div class="absolute top-0 left-0 flex flex-col justify-between w-full h-full">
+                            <div class="p-8">
+                                <div class="flex flex-wrap justify-end -m-1.5"></div>
+                            </div>
+                            <div class="p-8 bg-gray-1000 bg-opacity-50 overflow-y-auto">
+                                <h3 class="mb-4 text-xl text-white font-medium">Coaching: $125K/mo to $225K/mo in three months</h3>
+                                <p class="text-gray-300">Building an automated onboarding &amp;fulfillment system in ClickUp helped this coaching company grow by over $100,000 in one quarter.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/case-studies/fatjoe" class=" h-128 md:h-auto w-full hover:opacity-90 duration-100 col-start-2 col-end-2 row-start-2 row-end-3">
+                    <div class="relative overflow-hidden rounded-3xl h-full">
+                        <img class="w-full rounded-3xl object-cover" src="../images/case-3.jpg" alt=""/>
+                        <div class="absolute top-0 left-0 flex flex-col justify-between w-full h-full">
+                            <div class="p-8">
+                                <div class="flex flex-wrap justify-end -m-1.5"></div>
+                            </div>
+                            <div class="p-8 bg-gray-1000 bg-opacity-50 overflow-y-auto">
+                                <h3 class="mb-4 text-xl text-white font-medium">Agency: streamlining an 8-figure SEO company</h3>
+                                <p class="text-gray-300">Productized content production helped a world-renowned SEO agency scale to unforeseen heights.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pb-14 bg-gray-1000 relative" id="faq">
+        <div class="container mx-auto px-4">
+            <div class="border-gray-800 border rounded-3xl p-10 lg:px-16 lg:py-16">
+                <div>
+                    <div class="mx-auto">
+                        <span class="inline-h-6 mb-6 px-3 py-1.5 text-xs uppercase font-medium text-white button-bg rounded-full">Frequently Asked Questions</span>
+                        <h2 class="mt-8 text-4xl lg:text-5xl text font-medium tracking-7xl lg:tracking-8xl mb-8">FAQ</h2>
+                    </div>
+                    <div class="flex flex-wrap p-3 -m-6 md:-m-8">
+                        <div class="w-full grid md:grid-cols-2 md:px-4 gap-12 my-8">
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)" class=" faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl font-medium text-left">Why do this instead of hiring a COO?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text font-thin text-left ">
+                                                Hiring a skilled COO takes months and costs a lot (average $121,000/yr). You’re also on the hook for benefits + severance, and there's no guarantee they’ll deliver what you want. Our subscription model is more cost-effective and flexible for most companies under $3M/yr.
+                                            </p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="duration-200 rotate-180 transition-transform">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)"  class=" faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl text font-medium text-left">How much more cost-effective is this, really?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text text-opacity-50 font-thin text-left block">When you take into account payroll, benefits, severance, and the opportunity cost of hiring, our service is ~30% of the price of hiring in-house, and ~70% of the price of hiring an agency. You also get access to two world-class ops executives that have helped scale several 8-figure companies, as well as a 100% satisfaction guarantee + the ability to pause or cancel anytime.</p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-icon duration-200 rotate-180">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)" class="faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl text font-medium text-left">How does payment work?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text text-opacity-50 font-thin text-left hidden">When you click one of the payment options above, you &#x27;ll be taken to a Stripe Checkout page. After you pay, we &#x27;ll automatically create a subscription for you that renews on the same day every month. You can cancel or pause at any time.</p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-icon duration-200 ">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)" class="faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl text font-medium text-left">What do you mean by &#x27;100% satisfied &#x27;?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text text-opacity-50 font-thin text-left hidden">Our project management flow includes a simple way to request changes or revisions after a delivery. If you &#x27;re not completely satisfied with the systems you receive (think sales, hiring, onboarding, etc), you &#x27;d simply leave a comment and we &#x27;d continue revising your deliverable until you are.</p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-icon duration-200 ">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)" class="faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl text font-medium text-left">How do I submit a request?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text text-opacity-50 font-thin text-left hidden">After your thirty minute onboarding call, you &#x27;ll receive access to your own ClickUp board, where you can view and manage ongoing projects. To create a request, you merely click the + button on your board and add the task to our queue directly.</p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-icon duration-200 ">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)" class="faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl text font-medium text-left">What &#x27;s your refund policy?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text text-opacity-50 font-thin text-left hidden">If you &#x27;re not 100% satisfied with your service, we &#x27;ll keep working for free until you are.</p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-icon duration-200 ">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)" class="faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl text font-medium text-left">What does &#x27;unlimited &#x27;mean?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text text-opacity-50 font-thin text-left hidden">You can submit an unlimited number of requests. Most clients often have 10-15 in the queue at any one time, and their board acts as a to-do list. Our team works on one at a time (prioritized by you), and our average turnaround time on a system deliverable is between 1-4 days. The moment we &#x27;re done, we get to work on the next. In this way, we often deliver 10+ systems per month (whereas an in-house hire might deliver one or two).</p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-icon duration-200 ">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="min-w-full p-3">
+                                <button onclick="toggleFAQ(this)" class="faq-button block bg-gray-1000 rounded-3xl min-w-full">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="flex-1 p-2">
+                                            <h3 class="text-lg md:text-xl text font-medium text-left">How do we communicate?</h3>
+                                            <p class="faq-content transition duration-200 mt-4 text text-opacity-50 font-thin text-left hidden">Vast majority of our comms are async, through Slack and ClickUp. Minimizing call-time provides much more flexibility, allowing us to deliver more projects and higher quality services. That said, we offer an optional weekly ops consultation to discuss bottlenecks, prioritize, and track progress.</p>
+                                        </div>
+                                        <div class="p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq-icon duration-200 ">
+                                                <path d="M6.07928 15.82L12.3093 15.82L17.9193 15.82C18.8793 15.82 19.3593 14.66 18.6793 13.98L13.4993 8.80001C12.6693 7.97001 11.3193 7.97001 10.4893 8.80001L8.51928 10.77L5.30927 13.98C4.63927 14.66 5.11928 15.82 6.07928 15.82Z" fill="#D1D5DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        @media (min-width: 768px) {
+          .md\:grid-rows-2 {
+                  grid-template-rows: repeat(2, minmax(0, 1fr));
+           }
+
+           .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:h-208 {
+        height: 52rem;
+    }
+
+    .md\:grid {
+        display: grid;
+    }
+
+    .md\:h-auto {
+        height: auto;
+    }
+
+    .md\:row-end-2 {
+        grid-row-end: 2;
+    }
+
+    .md\:row-start-1 {
+        grid-row-start: 1;
+    }
+
+    .md\:col-start-2 {
+        grid-column-start: 2;
+    }
+}
+
+.gap-10 {
+    gap: 2.5rem;
+}
+
+.duration-100 {
+    transition-duration: .1s;
+}
+
+.rounded-3xl {
+    border-radius: 1.25rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.row-start-1 {
+    grid-row-start: 1;
+}
+
+.col-start-1 {
+    grid-column-start: 1;
+}
+
+.row-end-3 {
+    grid-row-end: 3;
+}
+
+.row-start-2 {
+    grid-row-start: 2;
+}
+
+.col-start-2 {
+    grid-column-start: 2;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.-m-1\.5 {
+    margin: -.375rem;
+}
+
+.bg-opacity-50 {
+    opacity: 0.5;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+    </style>
+    
+</body>
+</html>

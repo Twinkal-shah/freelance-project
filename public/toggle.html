@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Menu</title>
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <section class="pt-8 pb-14 bg-#FEFBF3 overflow-hidden">
+ 
+            <div class="container mx-auto px-4">
+                <div class="mb-14">
+                    <div class="flex items-center justify-between px-6 py-3.5 bg-gray-1000 border-gray-800 border rounded-xl">
+                        <div class="w-auto">
+                            <div class="flex flex-wrap items-center">
+                                <div class="w-auto">
+                                    <a href="./index.html" class="flex items-center justify-center tracking-wide">
+                                        <img src="../images/KG_webiste_withtext.svg" alt="" class="w-32 mr-1.5"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-auto">
+                            <div class="flex flex-wrap items-center">
+                                <div class="w-auto hidden lg:block">
+                                    <ul class="flex items-center justify-center">
+                                        <li class="mr-9">
+                                            <a class="inline-block text-lg font-medium text-primary-100 text-opacity-80 hover:text-primary-200 text" href="">Our services</a>
+                                        </li>
+                                        <li class="mr-9">
+                                            <a class="inline-block text-lg font-medium text-primary-100 text-opacity-80 hover:text-primary-200 text" href="">Case Studies</a>
+                                        </li>
+                                        <li class="mr-9">
+                                            <a class="inline-block text-lg font-medium text-primary-100 text-opacity-80 hover:text-primary-200 text" href="#how-it-works">How It Works</a>
+                                        </li>
+                                        <li>
+                                            <a class="inline-block text-lg font-medium text-primary-100 text-opacity-80 hover:text-primary-200 text" href="./contact-us.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-auto">
+                            <div class="flex flex-wrap items-center">
+                                <div class="w-auto hidden lg:block">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="w-full md:w-auto p-2">
+                                            <a class="block w-full px-8 py-2.5 text-center  button text-lg  from-neutral-600 button-bg bg hover:ring-4 rounded-xl opacity-90 duration-300 " href="https://cal.com/harsh719/30min">Book intro call →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-auto lg:hidden">
+                                    <button class="inline-block">
+                                        <svg class="navbar-burger text-primary-200" width="45" height="45" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                                            <path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div id="mobile-nav" class="hidden fixed inset-0 z-50 flex flex-col items-center justify-center" style="background-color: #bec4dff2;">
+                            <!-- Close Button -->
+                            <button class="absolute top-4 right-4 z-50 close-btn" style="top: 3rem; right: 3rem;">
+                                <svg class="navbar-burger text-primary-200" width="55" height="55" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                                    <path d="M37 24L19 37M37 37L19 24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        
+                            <!-- Logo -->
+                            <a href="./index.html" class="absolute top-4 left-4 z-50" style="top: 3rem; left: 3rem;">
+                                <img src="../images/KG_webiste_withtext.svg" alt="Logo" class="w-32" />
+                            </a>
+                        
+                            <!-- Navigation Links -->
+                            <ul class="flex flex-col items-center gap-6 mt-16" style="gap: 4rem;">
+                                <li><a class="text-black font-medium text-xl" href="" style="font-size: 2rem;">Our services</a></li>
+                                <li><a class="text-black font-medium text-xl" href="" style="font-size: 2rem;">Case Studies</a></li>
+                                <li><a class="text-black font-medium text-xl" href="#how-it-works" style="font-size: 2rem;">How It Works</a></li>
+                                <li><a class="text-black font-medium text-xl" href="./contact-us.html" style="font-size: 2rem;">Contact Us</a></li>
+                            </ul>
+                        
+                            <!-- CTA Button -->
+                            <a class="block px-8 py-2 mt-6 text-center text-white text-lg button-bg hover:bg-neutral-700 rounded-xl" href="https://cal.com/harsh719/30min" style="padding: 1rem 5rem;
+                            position: absolute;
+                            bottom: 1rem;">
+                                Book intro call →
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        
+        
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuBtn = document.querySelector(".navbar-burger"); // Menu button
+                const mobileNav = document.createElement("div"); // Mobile navigation container
+                const closeBtnSVG = `
+                    // <svg class="navbar-burger text-primary-200" width="45" height="45" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    //     <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                    //     <path d="M37 24L19 37M37 37L19 24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    // </svg>
+                `;
+        
+                // Mobile navigation content
+                mobileNav.innerHTML = `
+                     <div class="fixed inset-0 bg-gray-900 bg-opacity-95 z-50 flex flex-col items-center justify-center">
+                <button class="absolute top-[24px] right-[24px] z-50 close-btn">${closeBtnSVG}</button>
+                <a href="./index.html" class="absolute top-6 right-24">
+                    <img src="../images/KG_webiste_withtext.svg" alt="Logo" class="w-32" />
+                </a>
+                <ul class="flex flex-col items-center space-y-6">
+                    <li><a class="text-white text-lg font-medium" href="">Our services</a></li>
+                    <li><a class="text-white text-lg font-medium" href="">Case Studies</a></li>
+                    <li><a class="text-white text-lg font-medium" href="#how-it-works">How It Works</a></li>
+                    <li><a class="text-white text-lg font-medium" href="./contact-us.html">Contact Us</a></li>
+                </ul>
+                <a class="block px-8 py-2.5 mt-6 text-center text-lg text-white bg-neutral-600 hover:bg-neutral-700 rounded-xl" href="https://cal.com/harsh719/30min">Book intro call →</a>
+            </div>
+                `;
+        
+                // Append to body but hide initially
+                mobileNav.classList.add("hidden");
+                document.body.appendChild(mobileNav);
+        
+                // Open navigation
+                menuBtn.addEventListener("click", () => {
+                    mobileNav.classList.remove("hidden");
+                });
+        
+                // Close navigation
+                mobileNav.querySelector(".close-btn").addEventListener("click", () => {
+                    mobileNav.classList.add("hidden");
+                });
+            });
+        </script> -->
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".navbar-burger"); // Menu button
+    const mobileNav = document.getElementById("mobile-nav"); // Mobile navigation container
+
+    // Open navigation
+    menuBtn.addEventListener("click", () => {
+        mobileNav.classList.remove("hidden");
+    });
+
+    // Close navigation
+    mobileNav.querySelector(".close-btn").addEventListener("click", () => {
+        mobileNav.classList.add("hidden");
+    });
+});
+
+        </script>
+        
+</body>
+</html>

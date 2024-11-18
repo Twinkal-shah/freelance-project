@@ -1,0 +1,531 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Add this to your CSS */
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh; /* Make sure the body covers the whole screen */
+    position: fixed; /* This will prevent scrolling */
+    width: 100%;
+}
+
+
+
+
+
+.bg-#FEFBF3{
+    background-color: #FEFBF3;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #1E2022;
+    font-style: bold;
+    font-family:"sora";
+}
+
+.text{
+    color:  #1E2022;
+    font-weight: 500;
+    font-family: "sora";
+}
+
+.button{
+    background-color: #2B296B;
+    color: white;
+    font-family: "sora";
+
+}
+
+.text-size {
+    font-size: 2rem;
+}
+
+.w-32{
+    width: 6rem;
+}
+
+.button-bg{
+    background-color: #2B296B;
+}
+
+.border-gray-800 {
+    border-color: rgb(212 219 229);
+}
+
+.cta-padding{
+    font-size: 1.8rem;
+    padding: 1.2rem 0.8rem;
+}
+
+
+/* .....ppc-agency-process-section-start....  */
+ 
+.h2 {
+    font-size: 2.4rem;
+}
+
+.flex.col1>div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 calc(10px + 1.5%);
+    flex-wrap: wrap;
+}
+
+.row-block {
+    position: relative;
+}
+
+.centered {
+    text-align: center;
+}
+
+.flex.col1, .flex.col2, .flex.col3, .flex.col4 {
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}
+
+.flex.col1.centered, .flex.col2.centered, .flex.col3.centered, .flex.col4.centered {
+    justify-content: center;
+}
+
+.row-block>* {
+    margin-top: 0;
+}
+
+.block-content {
+    width: 100%;
+}
+
+
+.flex.col1 .row-block .block-content .panel {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+.cc-bg_black {
+    background-color: #403e7a;
+    color: var(--white);
+}
+.panel {
+    box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+    padding: calc(40px + 2%) calc(25px + 2%);
+    border-radius: 10px;
+}
+
+.row-block ul.checklist.left {
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+.row-block ul.checklist {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.checklist {
+    color: inherit;
+    list-style-type: none;
+    /* max-width: 100%; */
+    text-align: left;
+    /* margin: 0 0 2.4em 1em; */
+}
+
+/* ul {
+  
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1.2em;
+    font-size: 1.04em;
+    line-height: 1.7;
+    display: -webkit-flex;
+    display: flex;
+} */
+
+
+.flex.col1 .row-block .block-content .panel ul.checklist li {
+    margin-bottom: 2em;
+}
+
+ul.checklist>li.checkmark-lt-green-big {
+    padding-left: 52px;
+    min-height: 40px;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul.checklist>li {
+    /* padding-left: 24px; */
+    position: relative;
+    /* line-height: 1.5em; */
+}
+
+ul.checklist>li.checkmark-lt-green-big:before {
+    top: 0;
+    width: 34px;
+    height: 56px;
+    /* -webkit-mask-image: url(./images/checkmark-big.svg); */
+    mask-image: url(/images/checkmark-big.svg);
+    color: #def5dc;
+    background-color: #def5dc;
+}
+ul.checklist>li:before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    padding: 0;
+    margin: 0;
+    -webkit-mask-image: url(/images/checkmark-big.svg);
+    mask-image: url(/images/checkmark-big.svg);
+    color: var(--link-color);
+    background-color: var(--link-color);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+}
+
+ul.checklist>li span {
+    font-size: 1rem;
+}
+
+.checkmark-lt-green-big span {
+    display: inline;
+
+
+}
+
+.lg-width{
+    width: 33.33%;
+}
+
+@media screen and (max-width: 991px) {
+
+    .flex.col1 {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex.col1>div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .flex.col1 .row-block>div:last-child {
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .panel, .flex.col3>div.panel, .flex.col3>div.panel:nth-child(3n+3) {
+        padding: calc(25px + 2%) calc(20px + 2%);
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    ul.checklist>li span {
+        font-size: 1rem;
+        line-height: 1.4em;
+    }
+    ul.checklist>li.checkmark-lt-green-big {
+        padding-left: 40px;
+        min-height: 25px;
+    }
+}
+/* .....ppc-agency-process-section-ends....  */
+
+
+.c-wrap.cc-align_center {
+    text-align: center;
+    align-items: center;
+}
+.c-wrap {
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.h1{
+    font-size: 2rem;
+}
+
+
+
+.faq-content {
+    display: block; /* Ensure content is displayed by default */
+}
+
+.faq-content.hidden {
+    display: none; /* Hide content when it has the hidden class */
+}
+
+.faq-icon.rotate-180 {
+    transform: rotate(180deg); /* Rotate the icon */
+    transition: transform 0.2s ease; /* Smooth transition for the rotation */
+}
+
+
+.growth-cubes>div:hover {
+    color: #fff;
+    background-color: #23A356;
+    transition: all .5s;
+    transform: translateY(-10px);
+}
+
+
+
+.growth-cubes {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for each letter in "KLIENTS" */
+    padding: 16px;
+    font-family: "sora";
+}
+
+
+.growth-cubes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px;
+    font-size: 1.2rem; /* Adjust font size for the letters */
+}
+
+.growth-cubes:last-child{
+    grid-template-columns: repeat(6, 1fr)
+}
+
+.growth-cubes>div {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+.growth-cubes div p {
+    font-size: 1rem;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+/* .card:hover .hover-overlay {
+    opacity: 1;
+    color: #fff;
+  } */
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .growth-cubes {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+
+    .growth-cubes:last-child{
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .growth-cubes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller mobile screens */
+    }
+     
+    .growth-cubes:last-child{
+        grid-template-columns: repeat(2, 1fr)
+    }
+    
+}
+
+/* Extra-small screens (very small mobile) */
+@media (max-width: 480px) {
+    .growth-cubes {
+        grid-template-columns: 1fr; /* 1 column for extra-small screens */
+    }
+
+    .growth-cubes:last-child{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .md\:grid-rows-2 {
+            grid-template-rows: repeat(2, minmax(0, 1fr));
+     }
+
+     .md\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.md\:h-208 {
+  height: 52rem;
+}
+
+.md\:grid {
+  display: grid;
+}
+
+.md\:h-auto {
+  height: auto;
+}
+
+.md\:row-end-2 {
+  grid-row-end: 2;
+}
+
+.md\:row-start-1 {
+  grid-row-start: 1;
+}
+
+.md\:col-start-2 {
+  grid-column-start: 2;
+}
+
+.color{
+    color: white;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+}
+
+@media(max-width:576px){
+    .h-128{
+        height: 32rem;
+        }
+
+        .padding-t{
+            padding-top: 14rem;
+        }
+}
+.h-full {
+height: 100%;
+}
+
+.gap-10 {
+gap: 2.5rem;
+}
+
+.duration-100 {
+transition-duration: .1s;
+}
+
+.rounded-3xl {
+border-radius: 1.25rem;
+}
+
+.overflow-hidden {
+overflow: hidden;
+}
+
+.row-start-1 {
+grid-row-start: 1;
+}
+
+.col-start-1 {
+grid-column-start: 1;
+}
+
+.row-end-3 {
+grid-row-end: 3;
+}
+
+.row-start-2 {
+grid-row-start: 2;
+}
+
+.col-start-2 {
+grid-column-start: 2;
+}
+
+
+
+.-m-1\.5 {
+margin: -.375rem;
+}
+
+.justify-end {
+justify-content: flex-end;
+}
+
+.overflow-y-auto{
+overflow-y: auto;
+}
+
+.p-8 {
+padding: 2rem;
+}
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile nav css  */
+
+.mobile-view{
+    bottom: 5rem;
+    position: absolute;
+    padding: 14px 74px;
+}
